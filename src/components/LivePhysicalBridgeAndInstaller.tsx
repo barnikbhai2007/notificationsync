@@ -227,14 +227,22 @@ export const LivePhysicalBridgeAndInstaller: React.FC<
             id="installer-and-live-bridge-heading"
             className="text-xl font-bold text-slate-900"
           >
-            Download & Install ContinuumSync (PWA + Native Android Package)
+            Download & Install ContinuumSync (Android APK + PWA)
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 max-w-3xl">
-            Install the standalone <strong>Progressive Web App (PWA)</strong> directly onto both phones’ home screens right now, or download the complete <strong>Native Android Studio + GitHub Actions APK Package</strong> (<code className="font-mono">.tar.gz</code> or <code className="font-mono">.sh</code>).
+            Install the compiled <strong>Android APK</strong> (debug-signed, Android 9+) or the standalone <strong>Progressive Web App (PWA)</strong> onto both phones. The complete <strong>Android Studio project</strong> is also available as <code className="font-mono">.tar.gz</code> or an ADB installer script.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+          <a
+            href="/ContinuumSync-2.1.1.apk"
+            download="ContinuumSync-2.1.1.apk"
+            className="px-4 py-2.5 text-xs font-semibold bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-colors flex items-center gap-2 whitespace-nowrap shrink-0"
+          >
+            <Download className="w-4 h-4" />
+            Download Android APK (2.4 MB)
+          </a>
           {!isInstalled && (
             <button
               type="button"

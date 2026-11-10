@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Install ContinuumSync 2.1.1</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #060a12;
+        --card: #101a2b;
+        --soft: #0c1524;
+        --stroke: #1e2c44;
+        --text: #f2f6ff;
+        --mid: #a9b8d0;
+        --low: #7b8ca8;
+        --primary: #5b8cff;
+        --mint: #2bd9a8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px 16px;
+        background:
+          radial-gradient(700px 340px at 50% -100px, rgba(91, 140, 255, 0.28), transparent 70%),
+          var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      main {
+        width: 100%;
+        max-width: 460px;
+        background: linear-gradient(180deg, rgba(16, 26, 43, 0.96), rgba(12, 21, 36, 0.96));
+        border: 1px solid var(--stroke);
+        border-radius: 24px;
+        padding: 26px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--mint);
+        background: rgba(43, 217, 168, 0.12);
+        border: 1px solid rgba(43, 217, 168, 0.3);
+        border-radius: 999px;
+        padding: 5px 10px;
+      }
+      .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--mint); }
+      .applogo {
+        width: 58px;
+        height: 58px;
+        border-radius: 17px;
+        display: block;
+        margin-bottom: 15px;
+        box-shadow: 0 12px 34px rgba(91, 140, 255, 0.35);
+      }
+      h1 { font-size: 27px; line-height: 1.15; margin: 14px 0 6px; letter-spacing: -0.03em; }
+      .sub { color: var(--low); font-size: 13px; margin: 0 0 18px; }
+      p { color: var(--mid); font-size: 14px; line-height: 1.6; margin: 0 0 17px; }
+      .download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        text-align: center;
+        text-decoration: none;
+        background: var(--primary);
+        color: #07132c;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 15px 20px;
+        border-radius: 13px;
+        transition: filter 0.15s, transform 0.15s;
+      }
+      .download:hover { filter: brightness(1.08); transform: translateY(-1px); }
+      .download svg { width: 19px; height: 19px; }
+      .meta { text-align: center; color: var(--low); font-size: 12px; margin: 10px 0 20px; }
+      .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 0 0 20px;
+        padding: 0;
+        list-style: none;
+      }
+      .features li {
+        font-size: 12px;
+        color: var(--mid);
+        background: var(--soft);
+        border: 1px solid var(--stroke);
+        border-radius: 10px;
+        padding: 9px 10px;
+      }
+      .features b { color: var(--text); display: block; font-size: 12.5px; margin-bottom: 1px; }
+      h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--low); margin: 0 0 10px; }
+      ol { margin: 0; padding-left: 20px; color: var(--mid); font-size: 13.5px; line-height: 1.7; }
+      ol b { color: var(--text); }
+      .hash {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid var(--stroke);
+      }
+      .hash p { margin: 0 0 5px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--low); }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; color: var(--mid); word-break: break-all; }
+      .github {
+        display: block;
+        margin-top: 12px;
+        text-align: center;
+        font-size: 12.5px;
+        color: var(--mid);
+      }
+      .github a { color: var(--primary); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="applogo" src="/logo.png" alt="ContinuumSync logo" />
+      <span class="badge"><span class="dot"></span> Android build 2.1.1</span>
+      <h1>ContinuumSync</h1>
+      <p class="sub">Two phones. One flow.</p>
+      <p>Mirror notifications, share the clipboard instantly, and answer real calls from either phone. One phone hosts the room itself — no PC needed.</p>
+
+      <a class="download" href="/ContinuumSync-2.1.1.apk" download="ContinuumSync-2.1.1.apk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download APK · 2.4 MB
+      </a>
+      <div class="meta">Android 9+ (API 28) · signed · built by GitHub Actions</div>
+
+      <ul class="features">
+        <li><b>Phone-hosted</b>No PC or server needed</li>
+        <li><b>Auto-discovery</b>Finds the other phone on Wi-Fi</li>
+        <li><b>Alert feed</b>Notifications in real time</li>
+        <li><b>Clipboard + calls</b>Instant copy, remote answer/decline</li>
+      </ul>
+
+      <h2>Set up both phones</h2>
+      <ol>
+        <li>Connect both phones to the same Wi-Fi network.</li>
+        <li>Install the APK on both. If you have 2.0.1 or 2.1.0, update directly; uninstall 1.x or 2.0.0 builds first.</li>
+        <li>On <b>Phone A</b>, leave the default role. It hosts the room and shows a host address.</li>
+        <li>On <b>Phone B</b>, tap <b>Switch to Phone B</b>. It finds Phone A automatically, or tap <b>Scan</b>.</li>
+        <li>Grant notification listener, phone, call log, and contact access so alerts and caller names appear.</li>
+        <li>Allow <b>Display over other apps</b> on both phones so clipboard sync works while you are in any app.</li>
+        <li>Accessibility is optional now — enable it only as a clipboard backup.</li>
+        <li>The status pill turns <b>Linked</b> when both phones connect.</li>
+      </ol>
+
+      <div class="hash">
+        <p>SHA-256</p>
+        <code>892A9E649B22C6BF1149104A157928EDD3FA257E24927848E3E1C5A44EEFD263</code>
+      </div>
+
+      <div class="github">Also on <a href="https://github.com/barnikbhai2007/continuumsync-apk/releases/latest">GitHub Releases</a></div>
+    </main>
+  </body>
+</html>
