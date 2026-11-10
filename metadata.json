@@ -1,0 +1,6 @@
+{
+  "name": "ContinuumSync — Dual-Phone Android Sync Studio & Architecture Blueprint",
+  "description": "Interactive dual-phone synchronization simulator, Android API feasibility audit, and step-by-step Kotlin implementation blueprint for notification, call, and clipboard sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
